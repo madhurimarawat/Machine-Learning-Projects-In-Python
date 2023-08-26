@@ -1,12 +1,14 @@
 # Machine-Learning-Projects-In-Python
 This repository contains machine learning projects in the Python programming language.<br><br>
-<img width="916" height="430" src="https://github.com/madhurimarawat/Machine-Learning-Projects-In-Python/assets/105432776/23928656-ff22-4e9b-bb29-3e956a8dca68">
+<img width="916" height="430" src="https://github.com/madhurimarawat/Machine-Learning-Projects-In-Python/assets/105432776/ed1f6973-69bc-4909-9747-6ac98080d775">
 
 ---
 # Mode of Execution Used <img src="https://th.bing.com/th/id/R.c936445e15a65dfdba20a63e14e7df39?rik=fqWqO9kKIVlK7g&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f58481537cef1014c0b5e4968.png&ehk=dtrTKn1QsJ3%2b2TFlSfLR%2fxHdNYHdrqqCUUs8voipcI8%3d&risl=&pid=ImgRaw&r=0" title="PyCharm" alt="PyCharm" width="40" height="40"> <img src="https://www.pngfind.com/pngs/m/128-1286693_flask-framework-logo-svg-hd-png-download.png" title="Flask API" alt="Flask API" width="40" height="40">
 
 ## Pycharm
---> This IDE is used to write codes in python.<br><br>
+--> Visit the official website of pycharm: <a href="https://www.jetbrains.com/pycharm/"><img src="https://th.bing.com/th/id/R.c936445e15a65dfdba20a63e14e7df39?rik=fqWqO9kKIVlK7g&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f58481537cef1014c0b5e4968.png&ehk=dtrTKn1QsJ3%2b2TFlSfLR%2fxHdNYHdrqqCUUs8voipcI8%3d&risl=&pid=ImgRaw&r=0" title="PyCharm" alt="PyCharm" width="40" height="40"></a><br><br>
+--> Download according to the platform that will be used like Linux, Macos or Windows.<br><br>
+--> Follow the setup wizard and sign up for the free version (trial version) or else continue with the premium or paid version.<br><br>
 --> First, in pycharm we have the concept of virtual environment. In virtual environment we can install all the required libraries or frameworks.<br><br>
 --> Each project has its own virtual environment, so thath we can install requirements like Libraries or Framworks for that project only.<br><br>
 --> After this we can create a new file, various file types are available in pycharm like script files, text files and also Jupyter Notebooks.<br><br>
