@@ -1,9 +1,9 @@
 # Machine-Learning-Projects-In-Python
 This repository contains machine learning projects in the Python programming language.<br><br>
-<img width="916" height="430" src="https://indianaiproduction.com/wp-content/uploads/2019/11/Machine-Learning-Projects.png?is-pending-load=1">
+<img width="916" height="430" src="https://github.com/madhurimarawat/Machine-Learning-Projects-In-Python/assets/105432776/23928656-ff22-4e9b-bb29-3e956a8dca68">
 
 ---
-# Mode of Execution Used <img src="https://th.bing.com/th/id/R.c936445e15a65dfdba20a63e14e7df39?rik=fqWqO9kKIVlK7g&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f58481537cef1014c0b5e4968.png&ehk=dtrTKn1QsJ3%2b2TFlSfLR%2fxHdNYHdrqqCUUs8voipcI8%3d&risl=&pid=ImgRaw&r=0" title="PyCharm" alt="PyCharm" width="40" height="40"> <img src="https://cdn.freebiesupply.com/logos/large/2x/flask-logo-png-transparent.png" title="Flask API" alt="Flask API" width="40" height="40">
+# Mode of Execution Used <img src="https://th.bing.com/th/id/R.c936445e15a65dfdba20a63e14e7df39?rik=fqWqO9kKIVlK7g&riu=http%3a%2f%2fassets.stickpng.com%2fimages%2f58481537cef1014c0b5e4968.png&ehk=dtrTKn1QsJ3%2b2TFlSfLR%2fxHdNYHdrqqCUUs8voipcI8%3d&risl=&pid=ImgRaw&r=0" title="PyCharm" alt="PyCharm" width="40" height="40"> <img src="https://www.pngfind.com/pngs/m/128-1286693_flask-framework-logo-svg-hd-png-download.png" title="Flask API" alt="Flask API" width="40" height="40">
 
 ## Pycharm
 --> This IDE is used to write codes in python.<br><br>
@@ -86,11 +86,11 @@ Each project has four major parts :
 
 ## Algorithm Used
 <h3>Linear Regression</h3>
-<br>
 --> Regression: It predicts the continuous output variables based on the independent input variable. like the prediction of house prices based on different parameters like house age, distance from the main road, location, area, etc.<br><br>
 --> It computes the linear relationship between a dependent variable and one or more independent features. <br><br>
 --> The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables.<br>
 
+---
 ## Libraries Used
 <p>Short Description about all libraries used in Project.</p>
 <ul>
