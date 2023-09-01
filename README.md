@@ -92,6 +92,30 @@ Each project has four major parts :
 --> It computes the linear relationship between a dependent variable and one or more independent features. <br><br>
 --> The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables.<br>
 
+## Naive Bayes Classifier Diabetes Prediction
+
+--> First ML model is constructed using Naive Bayes Classifier for the dataset.<br><br>
+--> Then this model is saved using pickle in disk with the extention .pkl(Pickle File).<br><br>
+--> The Homepage is designed for flask app.<br><br>
+--> After this the flask app code is written.<br><br>
+--> Finally we can run this app in the flask Server.<br>
+
+## Dataset Used
+
+## Naive bayes classification data
+--> Dataset is taken from: <a href="https://www.kaggle.com/datasets/himanshunakrani/naive-bayes-classification-data"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png" height =40 width=40 title="Naive bayes classification data"> </a><br><br>
+--> Contains diabetes data for classification.<br><br>
+--> The dataset has 3 columns-glucose, blood pressure and diabetes and 995 entries.<br><br>
+--> Column glucose and blood pressure data is to classify whether the patient has diabetes or not.<br><br>
+--> Dataset is already cleaned,no preprocessing required.<br>
+
+## Algorithm Used
+
+<h3>Naive Bayes Classifiers</h3>
+--> Naive Bayes classifiers are a collection of classification algorithms based on Bayes’ Theorem. <br><br>
+--> It is not a single algorithm but a family of algorithms where all of them share a common principle, i.e. every pair of features being classified is independent of each other.<br><br>
+--> The fundamental Naive Bayes assumption is that each feature makes an independent and equal contribution to the outcome.
+
 ---
 ## Libraries Used
 <p>Short Description about all libraries used in Project.</p>
