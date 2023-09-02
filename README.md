@@ -116,6 +116,42 @@ Each project has four major parts :
 --> It is not a single algorithm but a family of algorithms where all of them share a common principle, i.e. every pair of features being classified is independent of each other.<br><br>
 --> The fundamental Naive Bayes assumption is that each feature makes an independent and equal contribution to the outcome.
 
+## Random Forest Car Evaluation
+
+--> First ML model is constructed using Naive Bayes Classifier for the dataset.<br><br>
+--> Then this model is saved using joblib in disk with the extention .pkl(Pickle File).<br><br>
+--> The Homepage is designed for flask app.<br><br>
+--> After this the flask app code is written.<br><br>
+--> Finally we can run this app in the flask Server.<br>
+
+## Dataset Used
+## Cars Evaluation Dataset
+--> Dataset is taken from: <a href="https://www.kaggle.com/datasets/elikplim/car-evaluation-data-set"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png" height =40 width=40 title="Cars Evaluation Dataset" alt="Cars Evaluation Dataset"> </a><br><br>
+--> Contains information about cars with respect to features like Attribute Values:<br><br>
+<table>
+<td>1. buying v-high, high, med, low </td>
+<td>2.maint v-high, high, med, low </td>
+<td>3.doors 2, 3, 4, 5-more </td>
+<td>4. persons 2, 4, more </td>
+<td>5. lug_boot small, med, big</td>  
+<td>6.safety low, med, high</td>  </table>
+--> Target categories are:<br><br>
+<table>
+  <td>1. unacc 1210 (70.023 %)</td>
+  <td>2. acc 384 (22.222 %)</td>
+  <td>3. good 69 ( 3.993 %)</td>
+  <td>4. v-good 65 ( 3.762 %)</td></table>
+--> Contains Values in string format.<br><br>
+--> Dataset is not cleaned, preprocessing is required.<br>
+
+## Algorithm Used
+
+<h3>Random Forest</h3>
+<br>
+--> It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model.<br><br>
+--> Instead of relying on one decision tree, the random forest takes the prediction from each tree and based on the majority votes of predictions, and it predicts the final output.<br><br>
+--> The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting.
+
 ---
 ## Libraries Used
 <p>Short Description about all libraries used in Project.</p>
@@ -127,7 +163,8 @@ cleaning, exploring, and manipulating data.</li>
   <li>Matplotlib - It is a data visualization and graphical plotting library.</li>
 <li>Scikit-learn - It is a machine learning library that enables tools for used for many other
 machine learning algorithms such as classification, prediction, etc.</li>
-  <li>Pickle-The pickle module is used for implementing binary protocols for serializing and de-serializing a Python object structure.</li>
+  <li>Pickle- The pickle module is used for implementing binary protocols for serializing and de-serializing a Python object structure.</li>
+  <li>Joblib- Joblib is a set of tools to provide lightweight pipelining in Python. In particular transparent disk-caching of functions and lazy re-evaluation (memoize pattern) and easy simple parallel computing.</li>
 </ul>
    
 ---
