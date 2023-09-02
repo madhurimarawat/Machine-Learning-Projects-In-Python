@@ -68,7 +68,7 @@ Each project has four major parts :
 3. templates - This folder contains the HTML template to allow user to enter details and displays the predicted value.
 4. static- This folder contains the css for the HTML file.
 
-## Linear Regression Salary Prediction
+# Linear Regression Salary Prediction
 
 --> First ML model is constructed using linear regression for the dataset.<br><br>
 --> Then this model is saved using pickle in disk with the extention .pkl(Pickle File).<br><br>
@@ -92,7 +92,7 @@ Each project has four major parts :
 --> It computes the linear relationship between a dependent variable and one or more independent features. <br><br>
 --> The goal of the algorithm is to find the best linear equation that can predict the value of the dependent variable based on the independent variables.<br>
 
-## Naive Bayes Classifier Diabetes Prediction
+# Naive Bayes Classifier Diabetes Prediction
 
 --> First ML model is constructed using Naive Bayes Classifier for the dataset.<br><br>
 --> Then this model is saved using pickle in disk with the extention .pkl(Pickle File).<br><br>
@@ -102,7 +102,7 @@ Each project has four major parts :
 
 ## Dataset Used
 
-## Naive bayes classification data
+### Naive bayes classification data
 --> Dataset is taken from: <a href="https://www.kaggle.com/datasets/himanshunakrani/naive-bayes-classification-data"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png" height =40 width=40 title="Naive bayes classification data"> </a><br><br>
 --> Contains diabetes data for classification.<br><br>
 --> The dataset has 3 columns-glucose, blood pressure and diabetes and 995 entries.<br><br>
@@ -116,7 +116,7 @@ Each project has four major parts :
 --> It is not a single algorithm but a family of algorithms where all of them share a common principle, i.e. every pair of features being classified is independent of each other.<br><br>
 --> The fundamental Naive Bayes assumption is that each feature makes an independent and equal contribution to the outcome.
 
-## Random Forest Car Evaluation
+# Random Forest Car Evaluation
 
 --> First ML model is constructed using Naive Bayes Classifier for the dataset.<br><br>
 --> Then this model is saved using joblib in disk with the extention .pkl(Pickle File).<br><br>
@@ -125,7 +125,7 @@ Each project has four major parts :
 --> Finally we can run this app in the flask Server.<br>
 
 ## Dataset Used
-## Cars Evaluation Dataset
+### Cars Evaluation Dataset
 --> Dataset is taken from: <a href="https://www.kaggle.com/datasets/elikplim/car-evaluation-data-set"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png" height =40 width=40 title="Cars Evaluation Dataset" alt="Cars Evaluation Dataset"> </a><br><br>
 --> Contains information about cars with respect to features like Attribute Values:<br><br>
 <table>
@@ -147,7 +147,6 @@ Each project has four major parts :
 ## Algorithm Used
 
 <h3>Random Forest</h3>
-<br>
 --> It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model.<br><br>
 --> Instead of relying on one decision tree, the random forest takes the prediction from each tree and based on the majority votes of predictions, and it predicts the final output.<br><br>
 --> The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting.
