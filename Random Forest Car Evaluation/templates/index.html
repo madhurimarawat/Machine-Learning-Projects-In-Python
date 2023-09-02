@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- This is for the Frontend Interface of the app-->
+
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Machine Learning Algorithm</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+
+<!-- class is given in body so that we can use it in css -->
+<body class="CONTAINER">
+
+ <h1 class="heading">Car Evaluation Using Random Forest Algorithm</h1>
+ 
+ <div class="login">
+ 
+     <!-- Main Input For Receiving Query to our ML Model -->
+	 
+    <form action="{{ url_for('predict')}}"method="post">
+	   
+	   <!-- This is used to get input for experience-->
+    	<input type="text" name="buying" placeholder="Enter Buying Capacity" required="required" /><br>
+		<input type="text" name="maint" placeholder="Enter Maintencence" required="required" /><br>
+        <input type="text" name="door" placeholder="Enter No. of doors" required="required" /><br>
+        <input type="text" name="pers" placeholder="Enter No. of persons" required="required" /><br>		
+		<input type="text" name="lug" placeholder="Enter Luggage Boot" required="required" /><br>
+		<input type="text" name="safe" placeholder="Enter Safety" required="required" /><br>
+
+	   <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+   <!-- For Printing Predicted Output-->
+   <!-- This is defined in python app file-->
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
