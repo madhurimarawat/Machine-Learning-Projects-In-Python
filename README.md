@@ -27,8 +27,9 @@ pip install flask
 ```
 
 ## Running Project in Flask Server
+<p>Make Sure all depencies are already satisfied before running the app.</p>
 
-1. Ensure that you are in the project home directory. Create the machine learning model by running below command - <br><br>
+1. Ensure that you are in the project home directory.Create the machine learning model by running below command - <br><br>
 --> This machine_learning_model.py file contains the code for the amachine learning model.
 
 ```
@@ -154,6 +155,11 @@ Each project has four major parts :
 ---
 ## Libraries Used
 <p>Short Description about all libraries used in Project.</p>
+To install python library this command is used-<br><br>
+
+```
+pip install library_name
+```
 <ul>
   <li>NumPy (Numerical Python) – Enables with collection of mathematical functions
 to operate on array and matrices. </li>
