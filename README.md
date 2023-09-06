@@ -59,7 +59,7 @@ If everything goes well, Predicted Value will be shown on the HTML page! <br>
 🌟 Project and Models will change but this process will remain the same for all flask projects.
 
 ---
-# About Projects
+# About Projects 📑
 <p>Complete Description about the project and resources used.</p>
 
 ## Project Structure
@@ -153,7 +153,7 @@ Each project has four major parts :
 --> The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting.
 
 ---
-## Libraries Used
+## Libraries Used 📚
 <p>Short Description about all libraries used in Project.</p>
 To install python library this command is used-<br><br>
 
@@ -171,7 +171,12 @@ machine learning algorithms such as classification, prediction, etc.</li>
   <li>Pickle- The pickle module is used for implementing binary protocols for serializing and de-serializing a Python object structure.</li>
   <li>Joblib- Joblib is a set of tools to provide lightweight pipelining in Python. In particular transparent disk-caching of functions and lazy re-evaluation (memoize pattern) and easy simple parallel computing.</li>
 </ul>
-   
+
+---
+### Additional Resources 🧮📚📓🌐
+
+<p> To see more of my machine learning models, visit my repository: https://github.com/madhurimarawat/Machine-Learning-Using-Python </p>
+
 ---
 
 ## Thanks for Visiting 😄
