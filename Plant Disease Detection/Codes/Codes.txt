@@ -1,0 +1,90 @@
+import joblib
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+
+# Load the Iris dataset for demonstration
+data = load_iris()
+X, y = data.data, data.target
+
+# Train a simple model
+model = RandomForestClassifier()
+model.fit(X, y)
+
+# Save the model to a file
+joblib.dump(model, 'model.joblib')
+
+
+import android.os.Bundle;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.output.ByteArrayOutputStream;
+import org.tensorflow.lite.Interpreter;
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Interpreter tflite;
+    private MappedByteBuffer tfliteModel;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Load the TensorFlow Lite model
+        try {
+            tfliteModel = loadModelFileFromAssets("model.tflite");
+            tflite = new Interpreter(tfliteModel);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Prepare input data (assuming you have input data in a ByteBuffer)
+        ByteBuffer inputData = prepareInputData();
+
+        // Run inference
+        TensorBuffer outputData = TensorBuffer.createFixedSize(new int[]{1, NUM_CLASSES}, DataType.FLOAT32);
+        tflite.run(inputData, outputData.getBuffer());
+
+        // Process the output (e.g., get predictions)
+        float[] predictions = outputData.getFloatArray();
+
+        // Display the result in a TextView
+        TextView resultTextView = findViewById(R.id.resultTextView);
+        resultTextView.setText("Predictions: " + Arrays.toString(predictions));
+    }
+
+    private MappedByteBuffer loadModelFileFromAssets(String modelPath) throws IOException {
+        AssetFileDescriptor fileDescriptor = getAssets().openFd(modelPath);
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
+    }
+
+    private ByteBuffer prepareInputData() {
+        // Implement your input data preparation here
+        // This is a simplified example, replace with your actual input data
+        // For demonstration, we'll use an array of zeros
+        float[] inputData = new float[NUM_INPUT_FEATURES];
+        Arrays.fill(inputData, 0.0f);
+        
+        ByteBuffer buffer = ByteBuffer.allocateDirect(inputData.length * Float.BYTES);
+        buffer.order(ByteOrder.nativeOrder());
+        buffer.rewind();
+
+        for (float value : inputData) {
+            buffer.putFloat(value);
+        }
+        buffer.rewind();
+
+        return buffer;
+    }
+}

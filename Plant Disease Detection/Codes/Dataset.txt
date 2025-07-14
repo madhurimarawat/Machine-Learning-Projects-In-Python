@@ -1,0 +1,11 @@
+Dataset- https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
+
+https://www.tensorflow.org/datasets/catalog/plant_village
+
+https://datasets.activeloop.ai/docs/ml/datasets/plantvillage-dataset/
+
+Notebook- https://www.kaggle.com/code/abdallahwagih/plant-village-disease-classification-acc-99-6
+
+GitHub- https://github.com/spMohanty/PlantVillage-Dataset
+
+https://github.com/gabrieldgf4/PlantVillage-Dataset
